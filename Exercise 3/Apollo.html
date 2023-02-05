@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Apollo</title>
+	<style type="text/css">
+		div#q img{
+			position: fixed;
+			width: 200px;
+			height: 200px;
+			top: 450px;	
+			animation-name: ser;
+			animation-timing-function: ease-in-out;
+			animation-direction: alternate;
+			animation-iteration-count: infinite;		
+			animation-duration: 10s;
+		}
+
+		@keyframes ser
+		{
+			0%{
+				opacity: 1;
+			}
+			17%{
+				opacity: 1;
+			}
+			25%{
+				opacity: 0;
+			}
+			92%{
+				opacity: 0;
+			}
+			100%{
+				opacity: 1;
+			}
+			
+		}
+		#q img:nth-of-type(1){
+				animation-delay: 8s;
+		}
+		#q img:nth-of-type(2){
+				animation-delay: 6s;
+		}
+		#q img:nth-of-type(3) {
+  				animation-delay: 4s;
+		}
+		#q img:nth-of-type(4){
+				animation-delay: 2s;
+		}
+		#q img:nth-of-type(5){
+				animation-delay: 0s;
+		}
+		h1{
+			text-align: center;
+			text-shadow: 2px 2px 4px black;
+			color: red;
+		}
+		div#re img{
+			position: fixed;
+			transform: translateX(1025px);
+			height: 200px;
+			width: 300px;
+			top: 475px;
+		}
+		div#f{
+			text-align: center;
+			background-color: black;
+			width: 100px;
+			border: 3px;
+			transform: translateX(1200px);
+		}
+		p{
+			text-indent:5%;
+			font-style: italic;
+		}
+		h2{
+			text-decoration: underline;
+			text-decoration-style: wavy;
+			color: blue;
+			text-transform: capitalize;
+		}
+		img{
+			width: 400px;
+			height: 300px;
+		}
+		table th,td{
+			border: 2px solid black;
+			border-radius: 10px;
+			border-style: dashed;
+			width: 200px;
+			
+		}
+		th{
+			background-color: navy;
+			text-align: center;
+			color: red;
+		}
+		tr.odd{
+			background-color: grey;			
+		}
+		tr{
+			background-color: lightgreen;
+		}
+		div#ta{
+			transform: translateX(200px);
+		}
+	</style>
+</head>
+<body>	
+	<header>
+		<div id="q">
+			
+		<img class="ani" id="1" src="https://5.imimg.com/data5/YP/MG/ZJ/SELLER-2950587/anesthesiology-services-500x500.png" alt="services" >
+		<img class="ani" id="2" src="https://www.emccochin.com/wp-content/uploads/2017/12/xb.jpg" alt="services" >
+		<img class="ani" id="3" src="https://www.krcdigitalindia.com/upload/gallary/1203/joshi-ent-clinic--158735167701.jpg" alt="services" >
+		<img class="ani" id="4" src="https://cfch.com.sg/wp-content/uploads/2022/07/3.jpg" alt="services" >
+		<img class="ani" id="5" src="https://msrmc.ac.in/wp-content/uploads/2018/01/neurology_mob.jpg" alt="services" >
+		
+		</div>
+		
+			<div id="re">
+				<a href="reg.html" target="blank">
+				<img id="6" src="https://e7.pngegg.com/pngimages/101/397/png-clipart-brand-logo-technology-registration-form-text-red-thumbnail.png">
+			</a>
+			</div>
+		
+		<h1>Apollo Hospital</h1>
+		<a href="sign.html" target="blank"><div id="f">Signup/Login</div></a>
+		
+	</header>
+	<h2>About Our Hospital:</h2>
+	<p>Apollo Hospitals Enterprise Limited is an Indian multinational healthcare group headquartered in Chennai. Along with the eponymous hospital chain, the company also operates pharmacies, primary care and diagnostic centres, telehealth clinics, and digital healthcare services among others through its subsidiaries.</p>
+
+<p>The company was founded by Prathap C. Reddy in 1983 as the first corporate healthcare provider in India. Several of Apollo's hospitals have been among the first in India to receive international healthcare accreditation by the America-based Joint Commission International (JCI) as well as NABH accreditation.</p>
+
+<h2>Hosiptal Facilities</h2>
+<div id="ta">
+<table>
+	<tr>
+		<th>Facility</th>
+		<th>Description</th>
+		<th>Image</th>
+	</tr>
+	<tr class="odd">
+		<td>Intercontinental Food</td>
+<td>The hospital is equipped to serve Continental and Intercontinental cuisine customized for the patients to suite their palate. This makes our patients feel comfortable & facilitates a speedy recovery.</td>
+<td><img src="http://www.ajayintercontinental.com/Ajay%20Intercontinental%20food%20dishes%205.jpg"></td>
+	</tr>
+	<tr>
+		<td>Parking</td>
+		<td>The parking at Apollo Bangalore is designed to be customer friendly, the parking space can accommodate about 250 cars & 350 two wheelers at any given time. To relive the stress of walk-in patients to the hospital there is valet parking facility.</td>
+		<td><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Tel_Aviv_parking_lot.jpg/800px-Tel_Aviv_parking_lot.jpg"></td>
+	</tr>
+
+	<tr class="odd">
+		<td>Internet</td>
+		<td>The hospital has both broadband connectivity & is Wifi enabled, patients can access internet in the patient rooms & Wifi in the lounge.</td>
+		<td><img src="https://5.imimg.com/data5/SELLER/Default/2022/11/CN/PH/DW/12088693/hotel-internet-connection-service-500x500.jpg"></td>
+	</tr>
+
+	<tr>
+		<td>Laundry Services</td>
+		<td>At Apollo, we take pride in putting our customers first. We have a unique understanding of the needs of our patients. We have a good support staff who are polite to help you with laundry services</td>
+		<td><img src="https://image.slidesharecdn.com/mdlaundary-170124160046/85/laundry-services-in-hospitals-linen-handling-2-320.jpg?cb=1665690327"></td>
+	</tr>
+
+	<tr class="odd">
+		<td>TeleCommunication Service</td>
+		<td>Telephone access to STD & ISD are provided in the patients rooms to make their hospital stay comfortable.</td>
+		<td><img src="https://thumbs.dreamstime.com/b/medical-technology-uses-telecommunication-consultation-patients-using-distance-showing-doctor-hologram-to-discuss-219736019.jpg"></td>
+	</tr>
+
+	<tr>
+		<td>Interpretation Service</td>
+		<td>Translators or Interpreters for various languages are available for your easy communication. For assistance please contact Reception.</td>
+		<td><img src="data:image/jpeg;base64,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"></td>
+	</tr>
+
+	<tr class="odd">
+		<td>Banks and Atm</td>
+		<td>There is an ATM within the hospital premises to facilitate easy access to the cash in case of any requirements</td>
+		<td><img src="https://images.hindustantimes.com/img/2021/08/11/1600x900/man-using-a-atm_80357f36-f288-11ea-b62b-e96b83076abc_1628652787653.jpg"></td>
+	</tr>
+
+	<tr>
+		<td>Money Transfer and Currency Exchange</td>
+		<td>Money transfer to the patient account in the hospital can be done through swift banking, so is the currency exchange where the money is transferred to the hospital account in the bank which exchanges the currency & credits it to the respective patients account for billing purpose. We do have a currency exchange facility in hospital and also western union money transfer located 100mts away from the facility.</td>
+		<td><img src="https://www.unimoni.in/blog/wp-content/uploads/2020/10/medical-money-transfer-860x560.jpg"></td>
+	</tr>
+
+	<tr class="odd">
+		<td>Cafe Coffee Day</td>
+		<td>Cafe coffee day, India’s most popular chain of coffee shops is housed within the hospital premises for people to de-stress over a cup of coffee.</td>
+		<td><img src="https://cdn.winsightmedia.com/platform/files/public/fsd/main/articles/keurig-medical-office-staff.jpg"></td>
+	</tr>
+</table></div>
+</body>
+</html>
