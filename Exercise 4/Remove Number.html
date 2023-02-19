@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Remove Number</title>
+</head>
+<body>
+<center><h1>Remove Number from the Expression</h1></center>
+<h2>Before Removing:</h2><br>
+<div>The Expression: A1B2C3D4E5F6G7H8I9J10</div><br>
+<h2>After  Removing:</h2><br>
+<p id="re"></p><br>
+<center><button onclick="remove()">Remove</button></center>
+<script type="text/javascript">
+	const str = 'A1B2C3D4E5F6G7H8I9J10';
+	function remove() 
+	{
+		const numbersRemoved = str.replace(/[0-9]/g, '');
+		document.getElementById("re").innerHTML= (numbersRemoved); 
+	}
+</script>
+</body>
+</html>

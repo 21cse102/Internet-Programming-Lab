@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Adding New KeyWord</title>
+</head>
+<body>
+	<center><h1>Adding</h1></center>
+	<h2>Before:</h2><br>
+	<div>The Expression1: New Veg Briyani</div>
+	<div>The Expression2: Pongal</div><br>
+	<h2>After:</h2><br>
+	<p id="demo"></p>
+	<p id="demo1"></p><br>
+
+	<center><button onclick="remove()">Add</button></center>
+<script>
+	let text = "New Veg Briyani";
+	let pattern =/New/i;
+	let result = text.match(pattern);
+
+	let text1 = "Pongal";
+	let pattern1 =/New/i;
+	let result1 = text.match(pattern);
+
+	let te="The Expression ";
+	function remove(){
+	if (text.substring(0,3)=="New") {
+		document.getElementById("demo").innerHTML = te+"1: "+text;
+	}else{
+		document.getElementById("demo").innerHTML = te+"1: New "+text;
+	}
+	if (text1.substring(0,3)=="New") {
+		document.getElementById("demo1").innerHTML = (te+"2: "+text1);
+	}else{
+		document.getElementById("demo1").innerHTML = (te+"2: New "+text1);
+	}
+}
+</script>
+</body>
+</html>

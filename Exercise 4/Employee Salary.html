@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Employee Details</title>
+	<style type="text/css">
+		li{
+			text-transform: capitalize;
+		}
+		h2{
+			text-decoration: underline;
+			text-decoration-style: wavy;
+			color: cyan;
+		}
+	</style>
+</head>
+<body>
+	<h1 style="text-align: center; text-shadow: 5px 5px 4px darkred; color: blue;">Employee Details</h1>
+	<h2>Before Sorting</h2>
+	<ol>
+		<li>Name:Arun  Salary: 1000000</li>
+		<li>name:Vikram  salary: 600000</li>
+		<li>name:Dinesh  salary: 800000</li>
+		<li>name:Vishnu  salary: 11000000</li>
+	</ol>
+	<h2>After Sorting</h2>
+	<p id="s"></p>
+	<center><button onclick="sort()" style="text-align: center;">Sort</button></center>
+	
+	<script type="text/javascript">
+		var employee =[
+		{name:"Arun",salary: 1000000},
+		{name:"Vikram",salary: 600000},
+		{name:"Dinesh",salary: 800000},
+		{name:"Vishnu",salary: 11000000}
+		];
+		function sort() 
+		{
+			employee.sort(function(a,b) {
+				return b.salary-a.salary;
+			});
+			var list=document.getElementById("s");
+			for (var i = 0; i < employee.length; i++) {
+				var listitem=document.createElement("div");
+
+				listitem.innerHTML =((i+1)+".Name: "+employee[i].name+",Salary: "+employee[i].salary);
+				list.appendChild(listitem);
+			}
+		}
+	</script>
+</body>
+</html>

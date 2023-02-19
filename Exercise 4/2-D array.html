@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Convert 2-D Array</title>
+</head>
+<body>
+<center><h1>Convert 2-D Array</h1></center>
+	<h2>Before:</h2><br>
+	<div>The Array:[[a,2],[c,4]</div>
+	<h2>After:</h2><br>
+	<p id="demo"></p>
+	<center><button onclick="d()">2-D</button></center>
+	 <script>
+            var array2D = [
+					[ "a" , "2"] ,
+					[ "c" ,"d" ]
+				];
+		function d (){
+		
+	var csv = array2D.map((item) => {
+	var row = item;	
+		return row.join(",");
+	}
+    ) 
+	.join("\n");
+	
+		document.getElementById("demo").innerHTML =(csv);
+      }      
+
+    </script>
+</body>
+</html>
